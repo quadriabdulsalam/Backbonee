@@ -1,0 +1,442 @@
+  .icons .menubar{
+    display: none;
+  }
+
+  .supports{
+    display: none;
+    width: 80px;
+    position: absolute;
+    z-index: 999;
+    background-color: white;
+    padding: 20px;
+    -webkit-box-shadow: 0px 0px 7px -5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 70px 3px rgba(0, 0, 0, 0.5);
+    right: 20px;
+    top: 35px;
+    
+    
+  }
+
+
+
+  
+@keyframes example {
+  from {
+  font-size: 18px;
+  font-weight: 400
+  ;}
+  to {
+  font-size: 22px;
+  font-weight: 500;}
+  }
+  
+  /* The element to apply the animation to */
+  .item .lin {
+  font-size: 18px;
+  animation-name: example;
+  animation-duration: 0.5s;
+  font-weight: 400;
+  animation-delay: 6s;
+  animation-iteration-count: 2;
+  }
+
+ 
+
+  // .item .link.is-open{
+    
+  // .supports{
+  //   display: none;
+
+  // }
+    
+  // }
+
+
+  // .supports.is-clicked{
+  //     display: block;
+
+  //   }
+
+//  .navbar.is-clicked{
+//   height: 180px;
+//  }
+
+
+
+ 
+  
+
+
+  // #top:hover{
+
+  //   .navbar {
+  //     height: 180px;
+  //     background-color: #000000;
+  
+    
+  //   .supports{
+  //     display: block;
+  //     background-color: #e6e6e6;
+  //     width: 80px;
+  //     position: absolute;
+  //     margin-top: 10px;
+      
+  //   }
+
+  // }
+
+  
+  // }
+
+.link:hover{
+  .supports{
+display: block;
+  }
+}
+
+
+// @media (min-width:601px) {
+//   .item #top{
+//     transition: 0.3s ease-in-out;
+//     position: relative;
+//     height: 80px;
+//     align-items: center;
+//     display: flex;
+//     }
+// }
+
+
+  
+
+  .stuffs{
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: black;
+
+  }
+
+  .icons .closebar{
+    display: none;
+  }
+
+  div .link{
+    cursor: pointer;
+  }
+  
+  .center .item {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+  }
+
+  .wrapper .left {
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+
+  .icons .cartIcon {
+    position: relative;
+  }
+
+  .cartIcon span {
+      font-size: 12px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: wheat;
+      color: rgb(0, 0, 0);
+      font-weight: 900;
+      position: absolute;
+      right: -10px;
+      top: -10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+
+  .navbar {
+    height: 75px;
+    background-color: #000000;
+    margin-top: 25px;
+    width: 100%;
+    opacity: 0.9;
+}
+  
+  .navbar .wrapper {
+      padding: 10px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;  
+      color: white;
+     
+
+    }
+
+  .item .link{
+        padding-left:30px;
+        padding-right:30px;
+        
+      }
+      .item .lin{
+        padding-left:30px;
+        padding-right:30px;
+      }
+
+  .item #top:hover,
+  .item #top.link{
+    color: rgb(255, 255, 255);
+}
+
+.item #top:hover,
+.item #top.lin{
+  color: rgb(255, 255, 255);
+}
+
+.item #top:hover::after{
+content: '';
+width: 70%;
+height: 3px;
+background: rgb(0, 0, 0);
+position: absolute;
+bottom: -4px;
+left: 17px;
+}
+
+.item #top{
+transition: 0.3s ease-in-out;
+position: relative;
+}
+      
+  .wrapper .center .item {
+        display: flex;
+        align-items: center;
+        gap: 5px
+      }
+      
+  .wrapper .right {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+      }
+
+  .right .icons {
+          display: flex;
+          gap: 15px;
+          color: #777;
+          cursor: pointer;
+
+        }
+  
+         
+  @media (max-width:700px) {
+    
+
+    .supports{
+      right: 3px;
+      top: 34px;
+      
+    }
+    
+    .item .link{
+      padding-left:10px;
+      padding-right:10px;
+    }
+    .item .lin{
+      padding-left:10px;
+      padding-right:10px;
+    }
+
+    .item #top:hover::after{
+      content: '';
+      width: 70%;
+      height: 3px;
+      background: rgb(0, 0, 0);
+      position: absolute;
+      bottom: -4px;
+      left: 11.5px;
+      }
+
+  }
+      
+
+
+  @media (max-width:600px) {
+
+    .supports{
+      right: 3px;
+      top: 54px;
+      
+    }
+
+  
+    
+
+   .wrapper .center .item {
+      display: block;
+      align-items: center;
+      gap: 25px;
+    }
+
+   .item .link {
+        display: none;
+    }
+
+    .item .lin {
+      display: none;
+  }
+
+   .item .link.is-open{
+      display: block;
+    }
+    .item .lin.is-open{
+      display: block;
+    }
+    .left.is-open{
+      display: none;
+    }
+
+    .cartIcon.is-open{
+      display: none;
+    }
+
+
+
+
+    .icons .menubar{
+      display: block;
+color: white;
+    }
+
+    .icons .menubar.is-open{
+      display: none;
+    }
+
+    .icons .closebar{
+      display: none;
+      color: white;
+    }
+    
+   .icons .closebar.is-open{
+      display: block;
+    }
+
+    .navbar.is-open {
+      height: 165px;      
+  }
+
+  .item .link{
+ padding: 10px;
+  }
+  .item .lin{
+    padding: 10px;
+     }
+  .item #top:hover::after{
+    content: '';
+    width: 70%;
+    height: 3px;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    bottom: -4px;
+    left: 11px;
+    }
+  }
+
+
+  .all{
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
+  .offer{
+    background-color: wheat;
+    width: 100%;
+    height: 25px;
+    position: fixed;
+   
+}
+
+h2{
+    color: rgb(0, 0, 0)
+    
+    
+    
+    ;
+    text-align: center;
+    font-size: 15px;
+    padding: 5px;
+}
+
+
+
+.carty{
+  color: white;
+}
+
+
+
+
+// .navbar {
+//   height: 80px;
+
+//   .wrapper {
+//     padding: 10px 30px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+
+//     .item {
+//       display: flex;
+//       align-items: center;
+//       font-size: 18px;
+//     }
+
+//     .left {
+//       display: flex;
+//       align-items: center;
+//       gap: 25px;
+//     }
+//     .center {
+//       font-size: 30px;
+//       letter-spacing: 2px;
+//     }
+//     .right {
+//       display: flex;
+//       align-items: center;
+//       gap: 25px;
+
+//       .icons {
+//         display: flex;
+//         gap: 15px;
+//         color: #777;
+//         cursor: pointer;
+
+//         .cartIcon {
+//           position: relative;
+
+//           span {
+//             font-size: 12px;
+//             width: 20px;
+//             height: 20px;
+//             border-radius: 50%;
+//             background-color: #2879fe;
+//             color: white;
+//             position: absolute;
+//             right: -10px;
+//             top: -10px;
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+  

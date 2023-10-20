@@ -1,0 +1,100 @@
+div .contain{
+   display: block;
+   padding-top: 100px;
+}
+
+.contacts{
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    padding-bottom: 35px;
+}
+
+.items{
+    display: flex;
+    justify-content: center;
+}
+
+.name{
+    padding-left: 0px;
+    padding-bottom: 30px;
+    display: grid;
+    place-items: center;
+}
+.names{
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 30px;
+    width: 35%
+}
+
+.nameses{
+    padding-left: 40px;
+    padding-right: 0;
+    padding-bottom: 30px;
+    width: 35%
+}
+
+.Label{ 
+    font-size: 18px;
+    display: flex;
+}
+
+.Input{
+    border-radius: 10px;
+    height:40px;
+    font-size: 15px;
+    width: 67%;
+    
+}
+
+
+.InputM{
+    border-radius: 10px;
+    height:180px;
+    font-size: 15px;
+    width: 67%;
+    
+}
+
+.nameInput{
+    border-radius: 10px;
+    height:40px;
+    font-size: 15px;
+    width: 90%;
+}
+
+.button{
+    border-radius: 10px;
+    height:40px;
+    font-size: 15px;
+    width: 67%;
+    background-color: black;
+    color: white;
+}
+
+
+.nameM{
+    padding-left: 0px;
+    padding-bottom: 30px;
+    display: grid;
+    place-items: center;
+}
+
+.named{
+    display: none;
+}
+
+@media (max-width:750px) {
+    
+    .named{
+        padding-left: 0px;
+        padding-bottom: 30px;
+        display: grid;
+        place-items: center;
+    }
+
+    .items{
+        display: none;
+    }
+}

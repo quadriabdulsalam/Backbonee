@@ -1,5 +1,5 @@
 // import { Children } from "react";
-import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import { HashRouter, RouterProvider, Outlet } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
@@ -90,7 +90,7 @@ console.log()
   
   
   
-  const router = createBrowserRouter([
+  const router = HashRouter([
     
     
     {

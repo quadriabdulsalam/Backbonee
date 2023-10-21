@@ -1,5 +1,5 @@
 // import { Children } from "react";
-import { HashRouter, RouterProvider, Outlet } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
@@ -43,12 +43,12 @@ function App() {
     //   console.log(show)
     // }
   
-    if (App = Home){
-      console.log('home')
-      alert('home')
-    }else{
-      alert('failed')
-    }
+    // if (App = Home){
+    //   console.log('home')
+    //   alert('home')
+    // }else{
+    //   alert('failed')
+    // }
   
     
     return (
@@ -90,7 +90,7 @@ console.log()
   
   
   
-  const router = HashRouter([
+  const router = createBrowserRouter([
     
     
     {
@@ -100,6 +100,10 @@ console.log()
         {
           path: "/",
           element: <Home />,
+        },
+        {
+          path: "/backbonee",
+          element:<Home/>,
         },
         {
           path: "/nav",

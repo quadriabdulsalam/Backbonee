@@ -169,7 +169,7 @@ console.log()
     
  
     <div>
-      <RouterProvider router={router}/>
+      <RouterProvider base='/' router={router}/>
       {show && <Cart doit={() => Fun()}/>}
     </div>
   

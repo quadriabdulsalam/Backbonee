@@ -20,10 +20,10 @@ function Maincontact() {
                 </div>
                 <div className='named'>
                     <label className='Label' >Name</label>
-                    <input className='Input' type='text' name='namemobile'/>
+                    <input className='Input' type='text' name='name'/>
                 </div>
                 <div className='named'>
-                    <label className='Label' >Email</label>
+                    <label className='Label' >Phone Number</label>
                     <input className='Input' type='name' name='phonemobile'/>
                 </div>
                 <div className='name'>

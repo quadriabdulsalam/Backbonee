@@ -56,7 +56,7 @@ const Navbar = (props) => {
       <div className="wrapper">
 
           <div className={`left ${isOpen ? "is-open" :''}`} onClick={togg} >
-          <Link className ="link" to="/">BACKBONEE</Link>
+          <Link className ="link" to="backbonee/">BACKBONEE</Link>
           </div>
                 
         <div className="center">

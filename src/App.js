@@ -98,7 +98,7 @@ console.log()
       element: <Layout  />,
       children: [
         {
-          path: "/",
+          path: "backbonee/",
           element: <Home />,
         },
         {

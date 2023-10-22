@@ -98,7 +98,7 @@ console.log()
       element: <Layout  />,
       children: [
         {
-          path: "backbonee/",
+          path: "/",
           element: <Home />,
         },
         {
@@ -169,7 +169,7 @@ console.log()
     
  
     <div>
-      <RouterProvider base='/' router={router}/>
+      <RouterProvider router={router}/>
       {show && <Cart doit={() => Fun()}/>}
     </div>
   

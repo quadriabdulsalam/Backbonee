@@ -50,7 +50,8 @@ function App() {
     //   alert('failed')
     // }
   
-    
+    alert('hello')
+    console.log('hello')
     return (
       <div className="app">
         

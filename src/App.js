@@ -103,7 +103,7 @@ console.log()
           element: <Home />,
         },
         {
-          path: "/backbonee",
+          path: "/Backbonee",
           element:<Home/>,
         },
         {
@@ -170,7 +170,7 @@ console.log()
     
  
     <div>
-      <RouterProvider router={router}/>
+      <RouterProvider router={router} basename={process.env.PUBLIC_URL}/>
       {show && <Cart doit={() => Fun()}/>}
     </div>
   

@@ -50,8 +50,7 @@ function App() {
     //   alert('failed')
     // }
   
-    alert('hello')
-    console.log('hello')
+    
     return (
       <div className="app">
         
@@ -172,6 +171,7 @@ console.log()
     <div>
       <RouterProvider router={router} basename={process.env.PUBLIC_URL}/>
       {show && <Cart doit={() => Fun()}/>}
+      <Cart/>
     </div>
   
     

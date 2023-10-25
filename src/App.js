@@ -171,7 +171,6 @@ console.log()
     <div>
       <RouterProvider router={router} basename={process.env.PUBLIC_URL}/>
       {show && <Cart doit={() => Fun()}/>}
-      <Cart/>
     </div>
   
     

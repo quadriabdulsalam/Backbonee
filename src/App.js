@@ -31,38 +31,37 @@ import Offer from "./components/Offer/Offer";
 // }
 
 
-function App() {
 
 
-  const Layout = () => {
+const Layout = () => {
 
    
-    // const [show, setShow] = useState(false);
-    // function Fun(){
-    //   setShow(!show)
-    //   console.log(show)
-    // }
+  // const [show, setShow] = useState(false);
+  // function Fun(){
+  //   setShow(!show)
+  //   console.log(show)
+  // }
+
+  // if (App = Home){
+  //   console.log('home')
+  //   alert('home')
+  // }else{
+  //   alert('failed')
+  // }
+
   
-    // if (App = Home){
-    //   console.log('home')
-    //   alert('home')
-    // }else{
-    //   alert('failed')
-    // }
-  
-    
-    return (
-      <div className="app">
-        
-        <Navbar doit={() => Fun()} />
-        <Outlet />
-        <Contact/>
-        <Footer />
-        
-      </div>
-    );
-  };
-  
+  return (
+    <div className="app">
+      
+      <Navbar  />
+      <Outlet />
+      <Contact/>
+      <Footer />
+      
+    </div>
+  );
+};
+
 
 
 
@@ -76,104 +75,107 @@ console.log()
 
 
 
-  const [show, setShow] = useState(false);
-  function Fun(){
-    setShow(!show)
-    console.log(show)
+// const [show, setShow] = useState(false);
+// function Fun(){
+//   setShow(!show)
+//   console.log(show)
 
-    return(
-      {Cart}
-    )
-    
+//   return(
+//     {Cart}
+//   )
+  
 
-  }
+// }
+
+
+
+const router = createBrowserRouter([
   
   
-  
-  const router = createBrowserRouter([
-    
-    
-    {
-      path: "/",
-      element: <Layout  />,
-      children: [
-        {
-          path: "/",
-          element: <Home />,
-        },
-        {
-          path: "/Backbonee",
-          element:<Home/>,
-        },
-        {
-          path: "/nav",
-          element: <Navbar  />,
-        },
-        {
-          path: "/products/:id",
-          element: <Products />,
-        },
-        {
-          path: "/product/:id",
-          element: <Product doit={() => Fun()} />,
-        },
-        {
-          path: "/maincontact",
-          element: <Maincontact/>
-        },
-        {
-          path: '/faq',
-          element: <Faq/>
-        },
-        {
-          path: '/terms',
-          element: <Terms/>
-        },
-        {
-          path: '/return',
-          element: <Returns/>
-        },
-        {
-          path: '/shipping',
-          element: <Shipping/>
-        },
-        {
-          path: '/privacy',
-          element: <Privacy/>
-        },
-        {
-          path: '/about',
-          element: <About/>
-        },
-        {
-          path: '/how',
-          element: <How/>
-        },
-        {
-          path: '/youvid',
-          element: <Youvid/>
-        },
-        {
-          path: '/youvidi',
-          element: <Youvidi/>
-        },
-      ],
-    },
-  ] 
-   );
+  {
+    path: "/",
+    element: <Layout  />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/Backbonee",
+        element:<Home/>,
+      },
+      {
+        path: "/nav",
+        element: <Navbar  />,
+      },
+      {
+        path: "/products/:id",
+        element: <Products />,
+      },
+      {
+        path: "/product/:id",
+        element: <Product  />,
+      },
+      {
+        path: "/maincontact",
+        element: <Maincontact/>
+      },
+      {
+        path: '/faq',
+        element: <Faq/>
+      },
+      {
+        path: '/terms',
+        element: <Terms/>
+      },
+      {
+        path: '/return',
+        element: <Returns/>
+      },
+      {
+        path: '/shipping',
+        element: <Shipping/>
+      },
+      {
+        path: '/privacy',
+        element: <Privacy/>
+      },
+      {
+        path: '/about',
+        element: <About/>
+      },
+      {
+        path: '/how',
+        element: <How/>
+      },
+      {
+        path: '/youvid',
+        element: <Youvid/>
+      },
+      {
+        path: '/youvidi',
+        element: <Youvidi/>
+      },
+    ],
+  },
+] 
+ );
 
 
 
 
+
+
+
+
+
+
+function App() {
   return (
-    
- 
     <div>
       <RouterProvider router={router}/>
-      {show && <Cart doit={() => Fun()}/>}
-    </div>
-  
-    
+     
+    </div> 
   );
 }
 

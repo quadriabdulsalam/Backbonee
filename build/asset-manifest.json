@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "http://localhost:3000/static/css/main.304fe6b3.css",
+    "main.js": "http://localhost:3000/static/js/main.2e320782.js",
+    "static/media/pii.png": "http://localhost:3000/static/media/pii.05f82aa2902e79860493.png",
+    "static/media/BD.PNG": "http://localhost:3000/static/media/BD.e37616725f8a30cecd48.PNG",
+    "static/media/pic.png": "http://localhost:3000/static/media/pic.c44247a665e85ef7b10d.png",
+    "static/media/ba.png": "http://localhost:3000/static/media/ba.c5b9d2b21052147fc4bf.png",
+    "static/media/pif.png": "http://localhost:3000/static/media/pif.a35e899d72ff729d26e0.png",
+    "static/media/shn.png": "http://localhost:3000/static/media/shn.2eb7a2a0cc13f7536ecd.png",
+    "static/media/pid.png": "http://localhost:3000/static/media/pid.bd36734f3df7dcd9fec9.png",
+    "static/media/pie.png": "http://localhost:3000/static/media/pie.af74303a2c3843508d43.png",
+    "static/media/sliderc.png": "http://localhost:3000/static/media/sliderc.25f3f7195a38f23672e0.png",
+    "static/media/pih.png": "http://localhost:3000/static/media/pih.0107499379da2e579c12.png",
+    "static/media/pig.png": "http://localhost:3000/static/media/pig.944f2a5807d26763fced.png",
+    "static/media/sliderb.png": "http://localhost:3000/static/media/sliderb.d9e897ce7ab5278b6999.png",
+    "static/media/pib.png": "http://localhost:3000/static/media/pib.10c3bab5f6c23416eff3.png",
+    "static/media/pij.png": "http://localhost:3000/static/media/pij.6a0e0973c94236fbf36d.png",
+    "static/media/pia.png": "http://localhost:3000/static/media/pia.1145f4466dfac5ee32c5.png",
+    "static/media/slidera.jpg": "http://localhost:3000/static/media/slidera.298edbb4ae7751de941b.jpg",
+    "static/media/payment.png": "http://localhost:3000/static/media/payment.c25c303da7570caf63c8.png",
+    "static/media/bjk.webp": "http://localhost:3000/static/media/bjk.b5217febb227dd847d61.webp",
+    "index.html": "http://localhost:3000/index.html",
+    "main.304fe6b3.css.map": "http://localhost:3000/static/css/main.304fe6b3.css.map",
+    "main.2e320782.js.map": "http://localhost:3000/static/js/main.2e320782.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.304fe6b3.css",
+    "static/js/main.2e320782.js"
+  ]
+}

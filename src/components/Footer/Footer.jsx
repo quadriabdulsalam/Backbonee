@@ -82,22 +82,22 @@ function Footer() {
                     </div>
                     <div className='sb_footer-links_div'>
                         <h4>Quick links</h4>
-                        <a href='#/faq'>
+                        <a href='/faq'>
                             <p>FAQ</p>
                         </a>
-                        <a href='#/terms'>
+                        <a href='/terms'>
                             <p>Terms Of Service </p>
                         </a>
-                        <a href='#/return'>
+                        <a href='/return'>
                             <p>Return/Refund Policies</p>
                         </a>
-                        <a href='#/shipping'>
+                        <a href='/shipping'>
                             <p>Shipping Policies</p>
                         </a>
-                        <a href='#/about'>
+                        <a href='/about'>
                             <p>About</p>
                         </a>
-                        <a href='#/privacy'>
+                        <a href='/privacy'>
                             <p>Privacy Policies</p>
                         </a>
                     </div>

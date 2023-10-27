@@ -173,7 +173,9 @@ const router = createBrowserRouter([
 function App() {
   return (
     <div>
+      <Cart/>
       <RouterProvider router={router}/>
+     
      
     </div> 
   );

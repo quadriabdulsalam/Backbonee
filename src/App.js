@@ -1,5 +1,13 @@
+
+
+
+
+
+
+
+
 // import { Children } from "react";
-import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import { createHashRouter, RouterProvider, Outlet } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
@@ -31,37 +39,38 @@ import Offer from "./components/Offer/Offer";
 // }
 
 
+function App() {
 
 
-const Layout = () => {
+  const Layout = () => {
 
    
-  // const [show, setShow] = useState(false);
-  // function Fun(){
-  //   setShow(!show)
-  //   console.log(show)
-  // }
-
-  // if (App = Home){
-  //   console.log('home')
-  //   alert('home')
-  // }else{
-  //   alert('failed')
-  // }
-
+    // const [show, setShow] = useState(false);
+    // function Fun(){
+    //   setShow(!show)
+    //   console.log(show)
+    // }
   
-  return (
-    <div className="app">
-      
-      <Navbar  />
-      <Outlet />
-      <Contact/>
-      <Footer />
-      
-    </div>
-  );
-};
-
+    // if (App = Home){
+    //   console.log('home')
+    //   alert('home')
+    // }else{
+    //   alert('failed')
+    // }
+  
+    
+    return (
+      <div className="app">
+        
+        <Navbar doit={() => Fun()} />
+        <Outlet />
+        <Contact/>
+        <Footer />
+        
+      </div>
+    );
+  };
+  
 
 
 
@@ -75,109 +84,104 @@ console.log()
 
 
 
-// const [show, setShow] = useState(false);
-// function Fun(){
-//   setShow(!show)
-//   console.log(show)
+  const [show, setShow] = useState(false);
+  function Fun(){
+    setShow(!show)
+    console.log(show)
 
-//   return(
-//     {Cart}
-//   )
-  
-
-// }
-
-
-
-const router = createBrowserRouter([
-  
-  
-  {
-    path: "/",
-    element: <Layout  />,
-    children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
-      {
-        path: "/Backbonee",
-        element:<Home/>,
-      },
-      {
-        path: "/nav",
-        element: <Navbar  />,
-      },
-      {
-        path: "/products/:id",
-        element: <Products />,
-      },
-      {
-        path: "/product/:id",
-        element: <Product  />,
-      },
-      {
-        path: "/maincontact",
-        element: <Maincontact/>
-      },
-      {
-        path: '/faq',
-        element: <Faq/>
-      },
-      {
-        path: '/terms',
-        element: <Terms/>
-      },
-      {
-        path: '/return',
-        element: <Returns/>
-      },
-      {
-        path: '/shipping',
-        element: <Shipping/>
-      },
-      {
-        path: '/privacy',
-        element: <Privacy/>
-      },
-      {
-        path: '/about',
-        element: <About/>
-      },
-      {
-        path: '/how',
-        element: <How/>
-      },
-      {
-        path: '/youvid',
-        element: <Youvid/>
-      },
-      {
-        path: '/youvidi',
-        element: <Youvidi/>
-      },
-    ],
-  },
-] 
- );
-
-
-
-
-
-
-
-
-
-
-function App() {
-  return (
-    <div>
+    return(
+      {Cart}
+    )
     
+
+  }
+  
+  
+  
+  const router = createHashRouter([
+    
+    
+    {
+      path: "/",
+      element: <Layout  />,
+      children: [
+        {
+          path: "/",
+          element: <Home />,
+        },
+        {
+          path: "/Backbonee",
+          element:<Home/>,
+        },
+        {
+          path: "/nav",
+          element: <Navbar  />,
+        },
+        {
+          path: "/products/:id",
+          element: <Products />,
+        },
+        {
+          path: "/product/:id",
+          element: <Product doit={() => Fun()} />,
+        },
+        {
+          path: "/maincontact",
+          element: <Maincontact/>
+        },
+        {
+          path: '/faq',
+          element: <Faq/>
+        },
+        {
+          path: '/terms',
+          element: <Terms/>
+        },
+        {
+          path: '/return',
+          element: <Returns/>
+        },
+        {
+          path: '/shipping',
+          element: <Shipping/>
+        },
+        {
+          path: '/privacy',
+          element: <Privacy/>
+        },
+        {
+          path: '/about',
+          element: <About/>
+        },
+        {
+          path: '/how',
+          element: <How/>
+        },
+        {
+          path: '/youvid',
+          element: <Youvid/>
+        },
+        {
+          path: '/youvidi',
+          element: <Youvidi/>
+        },
+      ],
+    },
+  ] 
+   );
+
+
+
+
+  return (
+    
+ 
+    <div>
       <RouterProvider router={router}/>
-     
-     
-    </div> 
+      {show && <Cart doit={() => Fun()}/>}
+    </div>
+  
+    
   );
 }
 

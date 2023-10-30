@@ -12,7 +12,7 @@ import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
 import Product from "./pages/Product/Product";
-import Products from "./pages/Products/Products";
+// import Products from "./pages/Products/Products";
 import Maincontact from "./pages/Maincontact/Maincontact";
 import Faq from "./pages/Faq/Faq";
 import "./app.scss";
@@ -117,10 +117,10 @@ console.log()
           path: "/nav",
           element: <Navbar  />,
         },
-        {
-          path: "/products/:id",
-          element: <Products />,
-        },
+        // {
+        //   path: "/products/:id",
+        //   element: <Products />,
+        // },
         {
           path: "/product/:id",
           element: <Product doit={() => Fun()} />,

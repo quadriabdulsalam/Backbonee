@@ -232,7 +232,7 @@ color: white;
     
 
     .containers .left span{
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
     }
 
     .containers{
@@ -241,6 +241,7 @@ color: white;
         background-color:  #d6d6d6;
         display: block;
         height: 600px;
+        margin-top: 150px;
     }
 
     .containers .left{
@@ -261,6 +262,10 @@ color: white;
 
 
 @media (max-width:507px) {
+
+    .containers{
+        margin-top: 50px;
+    }
 
 
 
@@ -286,6 +291,7 @@ color: white;
      
         display: block;
         margin-bottom: 400px;
+        margin-top: 50px;
       
         
     }
@@ -331,7 +337,7 @@ color: white;
 @media (max-width:470px) {
     
     .containers .left span{
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
         font-size: 13px;
     }
 }

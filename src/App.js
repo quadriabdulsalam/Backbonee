@@ -7,7 +7,7 @@
 
 
 // import { Children } from "react";
-import { createHashRouter, RouterProvider, Outlet } from "react-router-dom";
+import { RouterProvider, Outlet, createBrowserRouter } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
@@ -98,7 +98,7 @@ console.log()
   
   
   
-  const router = createHashRouter([
+  const router = createBrowserRouter([
     
     
     {

@@ -15,7 +15,7 @@ const Contact = () => {
           <form action="https://formsubmit.co/dqutesalam@gmail.com" method="POST">
           <input type="text" name="email" placeholder="Enter your e-mail..." />
           <input type="hidden" name="_captcha" value="false"/>
-          <input type="hidden" name="_next" value="http://localhost:3000"/>
+          <input type="hidden" name="_next" value="/"/>
           <button>JOIN US</button>
           </form>
         </div>
